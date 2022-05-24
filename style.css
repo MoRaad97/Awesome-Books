@@ -1,0 +1,85 @@
+body {
+  background-color: lightslategray;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  font-family: sans-serif;
+}
+
+form button {
+  height: 40px;
+  width: 220px;
+  border: none;
+  margin-left: 3%;
+  border-radius: 10px;
+  background-color: rgb(1, 85, 130);
+  font-weight: 600;
+  font-size: 18px;
+  color: white;
+  box-shadow: 2px 5px 2px black;
+}
+
+.container button {
+  height: 40px;
+  width: 200px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(1, 85, 130);
+  font-weight: 600;
+  font-size: 18px;
+  color: white;
+  box-shadow: 2px 5px 2px black;
+}
+
+form button:hover {
+  background-color: green;
+}
+
+.books {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.container {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  font-family: sans-serif;
+  margin: 10px 0;
+  width: 100%;
+}
+
+.container h2 {
+  margin: 0 5%;
+}
+
+.container button:hover {
+  background-color: rgb(196, 4, 4);
+}
+
+#book-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+  align-items: center;
+  text-align: center;
+  padding: 10%;
+}
+
+form label input {
+  display: flex;
+  padding: 2%;
+  flex-direction: column;
+  width: 320px;
+  border: none;
+  margin: 4%;
+  border-radius: 10px;
+  height: 30px;
+}
