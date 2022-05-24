@@ -8,6 +8,35 @@ h1 {
   font-family: sans-serif;
 }
 
+form button {
+  height: 40px;
+  width: 220px;
+  border: none;
+  margin-left: 3%;
+  border-radius: 10px;
+  background-color: rgb(1, 85, 130);
+  font-weight: 600;
+  font-size: 18px;
+  color: white;
+  box-shadow: 2px 5px 2px black;
+}
+
+.container button {
+  height: 40px;
+  width: 200px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(1, 85, 130);
+  font-weight: 600;
+  font-size: 18px;
+  color: white;
+  box-shadow: 2px 5px 2px black;
+}
+
+form button:hover {
+  background-color: green;
+}
+
 .books {
   display: flex;
   flex-direction: column;
@@ -28,18 +57,6 @@ h1 {
 
 .container h2 {
   margin: 0 5%;
-}
-
-.container button {
-  height: 40px;
-  width: 200px;
-  border: none;
-  border-radius: 10px;
-  background-color: rgb(1, 85, 130);
-  font-weight: 600;
-  font-size: 18px;
-  color: white;
-  box-shadow: 2px 5px 2px black;
 }
 
 .container button:hover {
@@ -65,21 +82,4 @@ form label input {
   margin: 4%;
   border-radius: 10px;
   height: 30px;
-}
-
-form button {
-  height: 40px;
-  width: 220px;
-  border: none;
-  margin-left: 3%;
-  border-radius: 10px;
-  background-color: rgb(1, 85, 130);
-  font-weight: 600;
-  font-size: 18px;
-  color: white;
-  box-shadow: 2px 5px 2px black;
-}
-
-form button:hover {
-  background-color: green;
 }
