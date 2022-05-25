@@ -75,12 +75,12 @@ class store {
     localStorage.setItem("books", JSON.stringify(books));
   }
 
-  //   static removeBook(){
-  // const books.forEach(book,index) => {
-  //   if (book.)
-  // }
-  //   }
-}
+ static removeBook(index) {
+    const books = store.getBooks()
+      books.splice(index, 1);
+      localStorage.setItem('books', JSON.stringify(books));
+    };
+  }
 
 // =============================================================
 // display books
@@ -112,4 +112,5 @@ document.getElementById("book-form").addEventListener("submit", (event) => {
 
 document.querySelector(".books").addEventListener("click", (e) => {
   creatBook.delete(e.target);
+  store.removeBook();
 });
