@@ -8,17 +8,17 @@ class Books {
 }
 
 // Local storage
-class store {
+class Store {
   static bookLocalStorage() {
     return JSON.parse(localStorage.getItem('books'));
   }
 
   static getBooks() {
-    return store.bookLocalStorage();
+    return Store.bookLocalStorage();
   }
 
   static addBook(book) {
-    const books = store.bookLocalStorage() ? store.bookLocalStorage() : [];
+    const books = Store.bookLocalStorage() ? Store.bookLocalStorage() : [];
     if (Array.isArray(books)) {
       books.push(book);
     }
@@ -26,20 +26,20 @@ class store {
   }
 
   static removeBook(index) {
-    const books = store.getBooks();
+    const books = Store.getBooks();
     books.splice(index, 1);
     localStorage.setItem('books', JSON.stringify(books));
   }
 }
 
 // Creating the list
-class creatBook {
+class CreatBook {
   // display books
   static displayBooks() {
-    const books = store.getBooks();
+    const books = Store.getBooks();
     // localStorage.clear();
     if (books !== null) {
-      books.forEach((book) => creatBook.createBookElements(book));
+      books.forEach((book) => CreatBook.createBookElements(book));
     }
     // no books found
   }
@@ -83,7 +83,7 @@ class creatBook {
 }
 
 // display books
-document.addEventListener('DOMContentLoaded', creatBook.displayBooks);
+document.addEventListener('DOMContentLoaded', CreatBook.displayBooks);
 
 // =============================================================
 // Add book
@@ -98,18 +98,18 @@ document.getElementById('book-form').addEventListener('submit', (event) => {
   const book = new Books(title, author);
 
   // Add book to the page
-  creatBook.createBookElements(book);
+  CreatBook.createBookElements(book);
 
   // Add book to local storage
-  store.addBook(book);
+  Store.addBook(book);
   // clear the fields
-  creatBook.clearfields();
+  CreatBook.clearfields();
 });
 
 // =============================================================
 // Remove book
 
 document.querySelector('.books').addEventListener('click', (e) => {
-  creatBook.delete(e.target);
-  store.removeBook();
+  CreatBook.delete(e.target);
+  Store.removeBook();
 });
