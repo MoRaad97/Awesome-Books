@@ -34,7 +34,7 @@ const createBookElements = ({ book, author }, index) => {
   authorName.innerText = author;
   btn.innerHTML = 'Delete';
 
-  btn.addEventListener('click', (event) => {
+  btn.addEventListener('click', (event2) => {
     event.target.parentElement.remove();
     books.splice(index, 1);
     localStorage.setItem('books', JSON.stringify(books));
@@ -59,3 +59,10 @@ bookForm.onsubmit = (event) => {
   inName.value = '';
   inAuthor.value = '';
 };
+
+// removeButton.onClick = (event2) => {
+// 	const remove = books.filter((book) => {
+// 		book.event2.toString() !== event2
+// 	});
+
+// }
