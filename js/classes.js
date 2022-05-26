@@ -66,7 +66,21 @@ class CreatBook {
 
     // This div must also append to some where in HTML so
     bookContainer.appendChild(bookDiv);
-  }
+}
+
+static openList() {
+  const bookList = document.getElementById('list');
+    const listSection = document.querySelector('section');
+    bookList.addEventListener('click', () => {
+       listSection.classList.add('display-section');
+console.log(listSection);
+     });
+
+
+
+
+}
+  
 
   // remove logic
   static delete(el) {
@@ -113,3 +127,5 @@ document.querySelector('.books').addEventListener('click', (e) => {
   CreatBook.delete(e.target);
   Store.removeBook();
 });
+
+CreatBook.openList();
