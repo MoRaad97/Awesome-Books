@@ -4,14 +4,40 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Book Awesome</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Add bootstarp -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css">
+  <link rel="stylesheet" type="text/css" href="css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+  <header>
+      <nav class="navbar navbar-expand-md navbar-light col-md-12 col-lg-12 s">
+      <div class="navbar-brand text-light"><i>Awesome Book</i></div>
+      <button type="submit" class=" navbar-toggler " data-toggle="collapse" data-target="#nav"><span class="navbar-toggler-icon color-light"></span></button>
+      <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav offset-lg-8 offset-md-2 align-items-center">
+        <li class="nav-item ">
+          <a class="nav-link text-light" href="#" id="list">List</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="#" id="add">Add</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="#" id="contact">Contact</a>
+        </li>
+      </ul>
+      </div>
+    </nav>
+  </header>
+  <section>
+    <div class="books"></div>
+  </section>
     <main>
 
       <h1>Book Awesome</h1>
-
-      <div class="books"></div>
 
       <form method="post" id="book-form">
           <label>
