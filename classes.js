@@ -66,33 +66,34 @@ class CreatBook {
 
     // This div must also append to some where in HTML so
     bookContainer.appendChild(bookDiv);
-}
+  }
 
-static openListPage() {
-  const bookList = document.getElementById('list');
+  static openListPage() {
+    const bookList = document.getElementById('list');
     const listSection = document.querySelector('.list-section');
     const addSection = document.querySelector('.add-section');
     const contactSection = document.querySelector('.contact-section');
     bookList.addEventListener('click', () => {
-       addSection.classList.add('hidden');
-       listSection.classList.remove('hidden');
-       contactSection.classList.add('hidden');
-     });
-    }
-static openAddPage() {
-  const bookList = document.getElementById('add');
+      addSection.classList.add('hidden');
+      listSection.classList.remove('hidden');
+      contactSection.classList.add('hidden');
+    });
+  }
+
+  static openAddPage() {
+    const bookList = document.getElementById('add');
     const listSection = document.querySelector('.list-section');
     const addSection = document.querySelector('.add-section');
     const contactSection = document.querySelector('.contact-section');
     bookList.addEventListener('click', () => {
-       addSection.classList.remove('hidden');
-       listSection.classList.add('hidden');
-       contactSection.classList.add('hidden');
-     });
-    }
+      addSection.classList.remove('hidden');
+      listSection.classList.add('hidden');
+      contactSection.classList.add('hidden');
+    });
+  }
 
-static openContactPage() {
-  const bookList = document.getElementById('contact');
+  static openContactPage() {
+    const bookList = document.getElementById('contact');
     const listSection = document.querySelector('.list-section');
     const addSection = document.querySelector('.add-section');
     const contactSection = document.querySelector('.contact-section');
@@ -100,9 +101,8 @@ static openContactPage() {
       addSection.classList.add('hidden');
       listSection.classList.add('hidden');
       contactSection.classList.remove('hidden');
-     });
-}
-  
+    });
+  }
 
   // remove logic
   static delete(el) {

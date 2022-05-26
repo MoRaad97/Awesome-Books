@@ -9,7 +9,7 @@ nav {
   box-shadow: 4px 4px 2px rgb(35, 57, 75);
 }
 
-.hidden{
+.hidden {
   display: none;
 }
 
@@ -28,9 +28,9 @@ h1 {
   color: green;
 }
 
-#add:hover {  color: green;}
+#add:hover { color: green; }
 
-#contact:hover {  color: green;}
+#contact:hover { color: green; }
 
 form button {
   height: 40px;
@@ -88,7 +88,6 @@ form button:hover {
 }
 
 #book-form {
-
   flex-direction: column;
   justify-content: center;
   width: 100%;
@@ -98,7 +97,7 @@ form button:hover {
 }
 
 section {
-margin-top: 50px;
+  margin-top: 50px;
 }
 
 form label input {
@@ -116,18 +115,21 @@ form label input {
   color: #3f51b5;
   font-size: 25px;
 }
+
 .contact-section ul {
   margin: 0;
   list-style: none;
 }
+
 .contact-section li {
   width: 250px;
   margin: 0 auto 5px;
 }
+
 .contact-section a {
-text-transform: capitalize;
-color: white;
-font-size: 20px;
+  text-transform: capitalize;
+  color: white;
+  font-size: 20px;
 }
 
 .footer {
@@ -136,7 +138,7 @@ font-size: 20px;
   width: 100%;
   text-align: center;
   border: solid 1px white;
-  border-width: 1px 0px 0px;
+  border-width: 1px 0 0;
   padding: 20px;
   margin-top: 30px;
   text-transform: capitalize;
