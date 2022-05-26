@@ -68,17 +68,39 @@ class CreatBook {
     bookContainer.appendChild(bookDiv);
 }
 
-static openList() {
+static openListPage() {
   const bookList = document.getElementById('list');
-    const listSection = document.querySelector('section');
+    const listSection = document.querySelector('.list-section');
+    const addSection = document.querySelector('.add-section');
+    const contactSection = document.querySelector('.contact-section');
     bookList.addEventListener('click', () => {
-       listSection.classList.add('display-section');
-console.log(listSection);
+       addSection.classList.add('hidden');
+       listSection.classList.remove('hidden');
+       contactSection.classList.add('hidden');
      });
+    }
+static openAddPage() {
+  const bookList = document.getElementById('add');
+    const listSection = document.querySelector('.list-section');
+    const addSection = document.querySelector('.add-section');
+    const contactSection = document.querySelector('.contact-section');
+    bookList.addEventListener('click', () => {
+       addSection.classList.remove('hidden');
+       listSection.classList.add('hidden');
+       contactSection.classList.add('hidden');
+     });
+    }
 
-
-
-
+static openContactPage() {
+  const bookList = document.getElementById('contact');
+    const listSection = document.querySelector('.list-section');
+    const addSection = document.querySelector('.add-section');
+    const contactSection = document.querySelector('.contact-section');
+    bookList.addEventListener('click', () => {
+      addSection.classList.add('hidden');
+      listSection.classList.add('hidden');
+      contactSection.classList.remove('hidden');
+     });
 }
   
 
@@ -128,4 +150,6 @@ document.querySelector('.books').addEventListener('click', (e) => {
   Store.removeBook();
 });
 
-CreatBook.openList();
+CreatBook.openListPage();
+CreatBook.openAddPage();
+CreatBook.openContactPage();
