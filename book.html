@@ -13,6 +13,7 @@
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+    <!-- Nav Bar -->
   <header>
       <nav class="navbar navbar-expand-md navbar-light col-md-12 col-lg-12 s">
       <div class="navbar-brand text-light"><i>Awesome Book</i></div>
@@ -32,24 +33,47 @@
       </div>
     </nav>
   </header>
-  <section>
+
+    <!-- List Section -->
+  <section class="list-section">
+    <h1>Awesome books list</h1>
     <div class="books"></div>
   </section>
-    <main>
 
-      <h1>Book Awesome</h1>
-
+  <!-- Add Books Section -->
+    <section class="add-section hidden">
+      <h1>Add books</h1>
       <form method="post" id="book-form">
           <label>
               <input id="title" type="text" placeholder="Enter book name" name="title" required>
           </label>
+          <br>
           <label>
               <input  id="author" type="text" placeholder="Enter author name" name="author" required>
-          </label>
+            </label>
+            <br>
           <button type="submit" onclick="">Add</button>
       </form>
-    </main>
+    </section>
 
+ <!-- Add Books Section -->
+ <section class="contact-section hidden">
+<h1 class="contact-header">Contact Us</h1>
+<p class="contact-p">If you have any question please contact us:</p>
+<ul>
+    <li><a href="ms@mail.com">contact us via Email</a></li>
+    <li><a href="facebook.com">contact us on Facebook</a></li>
+    <li><a href="Twitter.com">contact us via Twitter</a></li>
+</ul>
+
+
+
+ </section>
+
+<footer class="footer">
+    <h4>copyright to Mohammed & Sahar</h4>
+</footer>
+ <!-- js file -->
     <script type="text/javascript" src="js/classes.js"></script>
 
 </body>
